@@ -1,4 +1,3 @@
-
 export const showPassword = () =>{
 	const x = document.getElementById("password");
 	if (x.type === "password") {

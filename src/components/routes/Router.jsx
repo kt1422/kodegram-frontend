@@ -42,14 +42,14 @@ export default function RouterConvention() {
     return (
         <Routes>
             <Route index element={<Navigate to='/home'/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/user/profile' element={<Profile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/user/settings' element={<Setting isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/chat/login' element={<Chatlogin isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/chat/register' element={<Chatregister isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://awful-snaps-bull.cyclic.app/chat/home' element={
+            <Route path='/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/user/profile' element={<Profile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/user/settings' element={<Setting isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/chat/login' element={<Chatlogin isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/chat/register' element={<Chatregister isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='/chat/home' element={
                 <ProtectedRoute>
                     <Chathome isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
                 </ProtectedRoute>} />
