@@ -5,11 +5,11 @@ import { faHome, faCompass, faHeart, faMoon, faSun, faSearch, faPlusSquare, faUs
 import { Link } from "react-router-dom";
 import ModalSearch from "../ModalSearch";
 import ModalLogout from "../ModalLogout";
+import iconlogo from '../../../assets/img/circle-logo.png';
 
 const SideNav = (props) => {
     
     const [searchValue, setSearchValue] = useState("");
-    // const [isDarkMode, setIsDarkMode] = useState(false);
     const isDarkMode = props.isDarkMode;
     const handleThemeToggle = () => {
         const cookies = new Cookies();
@@ -28,7 +28,7 @@ const SideNav = (props) => {
             <div className={`sidenav border-end ${isDarkMode ? "dark" : ""}`}>
                 <div className="sidenav-header">
                     <Link to={"/home"} className="d-flex nav-link">
-                        <img className="logo my-1" src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" alt="Instagram" />
+                        <img className="logo my-1" src={iconlogo} alt="Instagram" />
                         <span className="kode fs-4 fw-semibold">Kodegram</span>
                     </Link>
                 </div>

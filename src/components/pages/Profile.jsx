@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import Navbar from '../partials/Navbar';
 import Cookies from 'universal-cookie';
 import { TabTitle } from '../../utilities/title';
 import { Link } from "react-router-dom";
@@ -100,7 +99,6 @@ export default function Profile(props) {
 
     return (
         <div className={`${props.isDarkMode ? "dark" : ""}`}>
-            {/* <Navbar user_id={user_id} username={username} pic={pic} ></Navbar> */}
             <div>
                 <SideNav user_id={user_id} username={username} pic={pic} isDarkMode={props.isDarkMode} setIsDarkMode={props.setIsDarkMode} likeModal={likeModal} setLikeModal={setLikeModal}></SideNav>
             </div>

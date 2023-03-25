@@ -41,15 +41,15 @@ export default function RouterConvention() {
 
     return (
         <Routes>
-            <Route index element={<Navigate to='/home' isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/user/profile' element={<Profile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/user/settings' element={<Setting isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/chat/login' element={<Chatlogin isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/chat/register' element={<Chatregister isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='/chat/home' element={
+            <Route index element={<Navigate to='/home'/>} />
+            <Route path='https://kodegram-frontend.vercel.app/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/user/profile' element={<Profile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/user/settings' element={<Setting isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/chat/login' element={<Chatlogin isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/chat/register' element={<Chatregister isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/chat/home' element={
                 <ProtectedRoute>
                     <Chathome isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
                 </ProtectedRoute>} />

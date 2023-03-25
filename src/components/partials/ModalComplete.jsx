@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import success from '../../assets/img/success.gif';
 
 const ModalComplete = () => {
     return (
@@ -9,7 +10,7 @@ const ModalComplete = () => {
                         <h1 className="modal-title fs-5" id="modalCompleteLabel">Your post has been shared</h1>
                     </div>
                     <div className="modal-body d-flex justify-content-center align-items-center">
-                        <img src="../../src/assets/img/success.gif" style={{width:100}} />
+                        <img src={success} style={{width:100}} />
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-primary" data-bs-dismiss="modal">Confirm</button>

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { loginUser } from '../../service/api';
 import Cookies from 'universal-cookie';
 import logo from '../../assets/img/logo.png';
+import { showPassword } from '../../assets/js/script';
 
 export default function Login() {
     TabTitle('Login');

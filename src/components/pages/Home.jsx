@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import Navbar from '../partials/Navbar';
 import Cookies from 'universal-cookie';
 import { TabTitle } from '../../utilities/title';
 import { useNavigate } from "react-router-dom";
@@ -9,7 +8,6 @@ import Post from '../partials/Post';
 import ModalCreatePost from '../partials/ModalCreatePost';
 import ModalLoading from '../partials/ModalLoading';
 import ModalComplete from '../partials/ModalComplete';
-import Footer from '../partials/Footer';
 import SideNav from '../partials/SideNav/SideNav';
 
 export default function Home(props) {
@@ -47,7 +45,6 @@ export default function Home(props) {
 
     return (
         <div className={`${props.isDarkMode ? "dark" : ""}`}>
-            {/* <Navbar user_id={user_id} username={username} pic={pic} ></Navbar> */}
             <div>
                 <SideNav user_id={user_id} username={username} pic={pic} isDarkMode={props.isDarkMode} setIsDarkMode={props.setIsDarkMode} likeModal={likeModal} setLikeModal={setLikeModal}></SideNav>
             </div>
@@ -88,7 +85,6 @@ export default function Home(props) {
                     </div>
                     }
                     </div>
-                    {/* <Footer></Footer> */}
                 </div>
             </div>
         </div>
