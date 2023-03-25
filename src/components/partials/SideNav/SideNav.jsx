@@ -28,7 +28,7 @@ const SideNav = (props) => {
             <div className={`sidenav border-end ${isDarkMode ? "dark" : ""}`}>
                 <div className="sidenav-header">
                     <Link to={"/home"} className="d-flex nav-link">
-                        <img className="logo my-1" src={iconlogo} alt="Instagram" />
+                        <img className="logo my-1 me-2" src={iconlogo} alt="Instagram" />
                         <span className="kode fs-4 fw-semibold">Kodegram</span>
                     </Link>
                 </div>
