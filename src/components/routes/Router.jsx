@@ -43,9 +43,9 @@ export default function RouterConvention() {
         <Routes>
             <Route index element={<Navigate to='/home'/>} />
             <Route path='/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://kodegram-frontend.vercel.app/home' element={<Home isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/home' element={<Navigate to='/home'/>} />
             <Route path='/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
-            <Route path='https://kodegram-frontend.vercel.app/user/login' element={<Login isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
+            <Route path='https://kodegram-frontend.vercel.app/user/login' element={<Navigate to='/user/login'/>} />
             <Route path='/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
             <Route path='https://kodegram-frontend.vercel.app/user/register' element={<Register isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
             <Route path='/user/profile' element={<Profile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>} />
