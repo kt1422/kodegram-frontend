@@ -1,0 +1,146 @@
+.cardsize{
+    width: 15rem;
+}
+
+.has-search .form-control {
+    padding-left: 2.8rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding-left: 16px;
+    padding-top: 9px;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.nav-menu {
+    color: black;
+}
+
+.nav-menu:hover {
+    color: white;
+    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+    background: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+}
+
+.name-link:hover {
+    color: gray;
+}
+
+.black-link {
+    color: gray;
+}
+
+.black-link:hover {
+    color: black;
+}
+
+.comment-box:focus {
+    outline: none;
+}
+
+#style-4::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: none;
+}
+
+#style-4::-webkit-scrollbar
+{
+	width: 0px;
+}
+
+#style-4::-webkit-scrollbar-thumb {
+    background: white;
+    -webkit-box-shadow: none;
+}
+
+#style-4::-webkit-scrollbar-thumb:window-inactive {
+    background: none;
+}
+
+/* html {
+    overflow-y: scroll !important;
+} */
+
+.follow-count:hover {
+    text-shadow: 2px 2px 5px red;
+}
+
+@media screen and (min-width: 701px) {
+    .media {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .media {
+        width: 350px;
+    }
+    .media2 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    /* .media {
+        width: 350px;
+    } */
+    .media {
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .media2 {
+        margin-left: 0px;
+    }
+    .media {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 779px) {
+    .media2 {
+        margin-left: 250px;
+    }
+    .media3 {
+        margin-left: 100px;
+    }
+    .media4 {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 509px) {
+    .media2 {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .media4 {
+        margin-left: 250px;
+    }
+    .setbtn {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .media4 {
+        margin-left: 100px;
+    }
+    /* .setbtn {
+        width: 200px;
+    } */
+}
+@media screen and (max-width: 480px) {
+    .media4 {
+        margin-left: 0px;
+    }
+}
