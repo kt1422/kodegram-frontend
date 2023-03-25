@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://fierce-crow-train.cyclic.app";
+const url = "https://awful-snaps-bull.cyclic.app";
 
 export const getAllUsers = async(data) => {
     try {
