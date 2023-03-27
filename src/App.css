@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Billabong';
-    src: url('../public/FontsFree-Net-Billabong.ttf') format('truetype');
+    src: url('./FontsFree-Net-Billabong.ttf') format('truetype');
 }
 
 .billabong{
