@@ -205,7 +205,7 @@ const Post = (props) => {
                         {
                         (heart=="Liked")?
                         <button className='name-link border-0 bg-transparent fs-4 p-0' onClick={()=>likeHandle(props.post_id, false)} >
-                            <FontAwesomeIcon icon="fa-solid fa-heart" className={`${props.isDarkMode ? "dark" : ""}`}/>
+                            <FontAwesomeIcon icon="fa-solid fa-heart" className={`${props.isDarkMode ? "dark" : "text-danger"}`}/>
                         </button>
                         :
                         <button className='test-link border-0 bg-transparent fs-4 p-0' onClick={()=>likeHandle(props.post_id, true)} >

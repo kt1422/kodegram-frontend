@@ -12,7 +12,7 @@ const ModalLogout = () => {
     }
 
     return (
-        <div className="modal fade" id="exampleModal4" tabIndex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+        <div className="modal fade" id="exampleModal4" tabIndex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true" style={{color: "black"}}>
             <div className="modal-dialog">
                 <div className="modal-content">
                     <div className="modal-header">

@@ -38,7 +38,7 @@ export default function Register() {
     
     return (
         <div>
-            <div style={{height: 80}} className='pt-1'>
+            <div style={{height: "10vh"}} className='pt-1'>
             {
             (status=="error")?
             <div className="alert alert-primary mx-2 mb-0" role="alert">
@@ -48,9 +48,11 @@ export default function Register() {
             <div></div>
             }
             </div>
-            <div className="container-fluid d-flex align-items-center justify-content-center gap-5">
-                <img src={logo} alt="" style={{height: 400}} />
-                <div className="bg-dark rounded rounded-4 d-flex justify-content-center flex-column px-4 text-light" style={{height: 600, width: 500}}>
+            <div style={{minHeight: "90vh"}} className="container-fluid d-flex flex-column flex-sm-row align-items-center justify-content-center gap-5 my-2">
+                <div className='col-3'>
+                    <img className='img-fluid float-end' src={logo} alt="" style={{maxHeight: 400}} />
+                </div>
+                <div className="col-10 col-sm-5 col-md-4 bg-dark rounded rounded-4 d-flex justify-content-center flex-column px-4 text-light" style={{height: 600}}>
                     <h1 className="align-self-center mb-3">Register</h1>
                     <form>
                         <div className="mb-3">

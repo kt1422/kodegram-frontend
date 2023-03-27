@@ -28,18 +28,19 @@ const SideNav = (props) => {
             <div className={`sidenav border-end ${isDarkMode ? "dark" : ""}`}>
                 <div className="sidenav-header">
                     <Link to={"/home"} className="d-flex nav-link">
-                        <img className="logo my-1 me-2" src={iconlogo} alt="Instagram" />
-                        <span className="kode fs-4 fw-semibold">Kodegram</span>
+                        <img className="logo my-1 me-3" src={iconlogo} alt="Instagram" />
+                        <span className="kode fs-2 fw-semibold billabong">Kodegram</span>
                     </Link>
                 </div>
                 <nav>
                     <ul className="nav-list ps-0">
-                        <li className="nav-item">
+                        <li className="start-icon nav-item">
                         <Link to={"/home"} className={`nav-link light a ${isDarkMode ? "dark" : ""}`}>
-                            <FontAwesomeIcon icon={faHome} className="nav-icon" /><span className="nav-label">Home</span>
+                            <FontAwesomeIcon icon={faHome} className="nav-icon" />
+                            <span className="nav-label">Home</span>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hide-icon">
                             <Link className={`nav-link light ${isDarkMode ? "dark" : ""}`}>
                             <FontAwesomeIcon icon={faCompass} className="nav-icon" />
                             <span className="nav-label">Explore</span>
@@ -51,25 +52,25 @@ const SideNav = (props) => {
                             <span className="nav-label">Messages</span>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hide-icon">
                             <Link className={`nav-link light ${isDarkMode ? "dark" : ""}`}>
                             <FontAwesomeIcon icon={faHeart} className="nav-icon" />
                             <span className="nav-label">Notifications</span>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hide-icon">
                             <Link data-bs-toggle="modal" data-bs-target="#createPostModal" className={`nav-link light ${isDarkMode ? "dark" : ""}`}>
                             <FontAwesomeIcon icon={faPlusSquare} className="nav-icon" />
                             <span className="nav-label">Create</span>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hide-icon">
                             <Link to={`/user/profile?id=${props.user_id}`} className={`nav-link light ${isDarkMode ? "dark" : ""}`} reloadDocument>
                             <FontAwesomeIcon icon={faUserCircle} className="nav-icon" />
                             <span className="nav-label">Profile</span>
                             </Link>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-item hide-icon">
                             <Link to={"/"} className={`nav-link light ${isDarkMode ? "dark" : ""}`}>
                             <FontAwesomeIcon icon={faQuestionCircle} className="nav-icon" />
                             <span className="nav-label">About Us</span>
@@ -92,14 +93,14 @@ const SideNav = (props) => {
                             </span>
                             </Link>
                         </li>
-                        <li className="nav-item dropdown dropup">
-                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img className="rounded-circle border border-dark me-2" src={props.pic} alt="" style={{width: 25, height: 25}}/>
+                        <li className="nav-item dropdown dropup pfp" style={{zIndex: 3}}>
+                            <a className="nav-link dropdown-toggle pff" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img className="logos rounded-circle border border-dark me-2" src={props.pic} alt="" style={{width: 25, height: 25}}/>
                                 <span className={`nav-label ${isDarkMode ? "dark" : ""}`}>
                                 {props.username}
                                 </span>
                             </a>
-                            <ul className={`dropdown-menu ${isDarkMode ? "dark" : ""}`} style={{position: "absolute"}}>
+                            <ul className={`dropdown-menu ${isDarkMode ? "dark" : ""}`} style={{zIndex: 3}}>
                                 <li>
                                     <Link to={`/user/profile?id=${props.user_id}`} className={`dropdown-item ${isDarkMode ? "dark" : ""}`} reloadDocument>Profile</Link>
                                 </li>

@@ -44,7 +44,7 @@ const ModalFollower = (props) => {
 
     return (
         <div>
-            <div className="modal fade" id="modalFollower" tabIndex="-1" aria-labelledby="modalFollowerLabel" aria-hidden="true">
+            <div className="modal fade" id="modalFollower" tabIndex="-1" aria-labelledby="modalFollowerLabel" aria-hidden="true" style={{color: "black"}}>
                 <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                         <div className="modal-header d-flex">

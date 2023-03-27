@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('../public/FontsFree-Net-Billabong.ttf') format('truetype');
+}
+
+.billabong{
+    font-family: 'Billabong';
+    /* font-weight: 300; */
+    color: #0093E9;
+}
+
 .cardsize{
     width: 15rem;
 }
@@ -142,5 +153,9 @@
 @media screen and (max-width: 480px) {
     .media4 {
         margin-left: 0px;
+    }
+    .media5 {
+        align-items: center;
+        justify-content: center;
     }
 }

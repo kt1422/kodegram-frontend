@@ -40,19 +40,21 @@ export default function Login() {
 
     return (
         <div>
-            <div style={{height: 150}} className="pt-1">
-            {
-            (status=="error")?
-            <div className="alert alert-primary mx-2 mb-0" role="alert">
-            {message}
+            <div style={{height: "10vh"}} className="pt-1">
+                {
+                (status=="error")?
+                <div className="alert alert-primary mx-2 mb-0" role="alert">
+                {message}
+                </div>
+                :
+                <div></div>
+                }
             </div>
-            :
-            <div></div>
-            }
-            </div>
-            <div className="container-fluid d-flex align-items-center justify-content-center gap-5">
-                <img src={logo} alt="" style={{height: 400}} />
-                <div className="bg-dark rounded rounded-4 d-flex justify-content-center flex-column px-4 text-light" style={{height: 400, width: 500}}>
+            <div style={{height: "90vh"}} className="container-fluid d-flex flex-column flex-sm-row align-items-center justify-content-center gap-5">
+                <div className='col-3'>
+                    <img className='img-fluid float-end' src={logo} alt="" style={{maxHeight: 400}} />
+                </div>
+                <div className="col-10 col-sm-5 col-md-4 bg-dark rounded rounded-4 d-flex justify-content-center flex-column px-4 text-light" style={{height: 400}}>
                     <h1 className="align-self-center mb-3">Login</h1>
                     <form>
                         <div className="mb-4">

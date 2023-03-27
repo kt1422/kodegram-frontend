@@ -3,7 +3,7 @@ import success from '../../assets/img/success.gif';
 
 const ModalComplete = () => {
     return (
-        <div className="modal fade" id="modalComplete" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="modalCompleteLabel" aria-hidden="true">
+        <div className="modal fade" id="modalComplete" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="modalCompleteLabel" aria-hidden="true" style={{color: "black"}}>
             <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content">
                     <div className="modal-header">

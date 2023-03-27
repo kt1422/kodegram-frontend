@@ -24,7 +24,7 @@ const ModalEditPost = (props) => {
     }
     
     return (
-        <div className="modal fade" id={`editPostModal${post_id}`} tabIndex="-1" aria-labelledby="editPostModalLabel" aria-hidden="true">
+        <div className="modal fade" id={`editPostModal${post_id}`} tabIndex="-1" aria-labelledby="editPostModalLabel" aria-hidden="true" style={{color: "black"}}>
             <div className="modal-dialog modal-lg modal-dialog-centered">
                 <div className="modal-content">
                     <div className="modal-header d-flex">
